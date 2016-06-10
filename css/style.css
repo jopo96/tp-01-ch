@@ -53,19 +53,16 @@ modelo de caja - box model
 .main-header{ 
 	width: 1200px;
 	margin: auto;
-	border: solid 1px red;
 	padding: 20px 0;
  }
 
 
 .logo{
 	float: left;
-	border: solid 1px green;
 }
 
  .main-nav{
  	float: right;
- 	border: solid 1px yellow;
 
  }
 
@@ -157,12 +154,18 @@ modelo de caja - box model
 }
 
 .services-left{
-	width: 400px;
+	width: 330px;
+	margin-right: 70px;
 	float: left;
-	border: none;
-	border: solid 1px green;
 	text-align: right;
-	padding-right: 80px;
+	margin-top: 50px;
+}
+
+.services-left img{
+	float: none;
+	position: relative;
+	left: 60px;
+	top: -110px;
 }
 
 .services-left h3{
@@ -176,14 +179,20 @@ modelo de caja - box model
 	float: left;
 	padding-left: 50px;
 	border: none;
-	border: solid 1px green;
 }
 
 .services-right{
-	width: 400px;
+	width: 330px;
+	margin-left: 70px;
 	float: right;
-	border: none;
-	border: solid 1px red;
+	margin-top: 50px;
+}
+
+.services-right img{
+	float: none;
+	position: relative;
+	left: -60px;
+	top: -110px;
 }
 .services-right h3{
 	text-transform: uppercase;
@@ -193,15 +202,18 @@ modelo de caja - box model
 
 #prices-banner{
 	background: url(../images/pricing-bg.jpg) center top no-repeat;
-	background-size: cover;
-	border: solid 1px green;
+	background-position: cover;
+	height: 350px;
+	position: relative;
+	bottom: 100px;
+	z-index: -1;
 }
 
 .prices-title{
 	text-align: center;
 	font-size: 28px;
 	font-family: inherit;
-	padding-top: 85px;
+	padding-top: 130px;
 }
 
 .prices-text{
@@ -209,6 +221,10 @@ modelo de caja - box model
 	font-size: 16px;
 	font-family: inherit;
 	margin-bottom: 60px;
+}
+.tables{
+	position: relative;
+	bottom: 180px;
 }
 
 .tables h4{
@@ -252,6 +268,7 @@ modelo de caja - box model
 	width: 250px;
 	float: left;
 	margin-right: 66px;
+	background-color: #fff;
 }
 
 .table-2{
@@ -259,6 +276,7 @@ modelo de caja - box model
 	width: 250px;
 	float: left;
 	margin-right: 66px;
+	background-color: #fff;
 }
 
 .table-3{
@@ -266,16 +284,17 @@ modelo de caja - box model
 	width: 250px;
 	float: left;
 	margin-right: 66px;
+	background-color: #fff;
 }
 .table-4{
 	border: solid 1px grey;
 	width: 250px;
 	float: left;
+	background-color: #fff;
 }
 
 .tables a{
 	font-size: 20px;
 	text-transform: uppercase;
 	text-decoration: none;
-	align-content: center;
 }

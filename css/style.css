@@ -125,14 +125,157 @@ modelo de caja - box model
 }
 
 .producto{
-	border: dashed 1px green;
 	width: 300px;
 	float: left;
-	margin-top: 100px;
+	margin-top: 120px;
 	text-align: center;
 }
 
 .producto h4{
 	text-transform: uppercase;
+	font-size: 16px;
+	font-family: inherit;
+}
+.producto p{
 	font-size: 13px;
+	font-family: inherit;
+	line-height: 170%;
+}
+
+.services-title{
+	text-align: center;
+	font-size: 28px;
+	font-family: inherit;
+	padding-top: 85px;
+}
+
+.services-text{
+	text-align: center;
+	font-size: 16px;
+	font-family: inherit;
+	margin-bottom: 60px;
+}
+
+.services-left{
+	width: 400px;
+	float: left;
+	border: none;
+	border: solid 1px green;
+	text-align: right;
+	padding-right: 80px;
+}
+
+.services-left h3{
+	text-transform: uppercase;
+	font-size: 16px;
+	font-family: inherit; 
+}
+
+.services-center{
+	width: 400px;
+	float: left;
+	padding-left: 50px;
+	border: none;
+	border: solid 1px green;
+}
+
+.services-right{
+	width: 400px;
+	float: right;
+	border: none;
+	border: solid 1px red;
+}
+.services-right h3{
+	text-transform: uppercase;
+	font-size: 16px;
+	font-family: inherit;
+}
+
+#prices-banner{
+	background: url(../images/pricing-bg.jpg) center top no-repeat;
+	background-size: cover;
+	border: solid 1px green;
+}
+
+.prices-title{
+	text-align: center;
+	font-size: 28px;
+	font-family: inherit;
+	padding-top: 85px;
+}
+
+.prices-text{
+	text-align: center;
+	font-size: 16px;
+	font-family: inherit;
+	margin-bottom: 60px;
+}
+
+.tables h4{
+	text-transform: uppercase;
+	font-size: 15px;
+	text-align: center;
+	font-family: inherit;
+}
+.tables h2{
+	text-align: center;
+	font-family: Arial;
+	font-size: 40px;
+}
+
+.tables p{
+	text-align: center;
+	font-family: inherit;
+	font-size: 15px;
+	color: grey;
+	position: relative;
+	top: -45px;
+}
+
+
+.divisor{
+	color: gray;
+	width: 200px;
+	position: relative;
+	top: -20px;
+}
+
+.t td{
+	width: 250px;
+	height: 40px;
+	text-align: center;
+}
+
+
+.table-1{
+	border: solid 1px grey;
+	width: 250px;
+	float: left;
+	margin-right: 66px;
+}
+
+.table-2{
+	border: solid 1px grey;
+	width: 250px;
+	float: left;
+	margin-right: 66px;
+}
+
+.table-3{
+	border: solid 1px grey;
+	width: 250px;
+	float: left;
+	margin-right: 66px;
+}
+.table-4{
+	border: solid 1px grey;
+	width: 250px;
+	float: left;
+}
+
+.tables a{
+	font-size: 20px;
+	text-transform: uppercase;
+	text-decoration: none;
+	align-content: center;
 }

@@ -295,6 +295,7 @@ modelo de caja - box model
 
 .table-1{
 	border: solid 1px none;
+		box-shadow: 0 0 1em grey;
 	width: 250px;
 	float: left;
 	margin-right: 66px;
@@ -304,6 +305,7 @@ modelo de caja - box model
 
 .table-2{
 	border: solid 1px none;
+		box-shadow: 0 0 1em grey;
 	width: 250px;
 	float: left;
 	margin-right: 66px;
@@ -312,6 +314,7 @@ modelo de caja - box model
 
 .table-3{
 	border: solid 1px none;
+		box-shadow: 0 0 1em grey;
 	width: 250px;
 	float: left;
 	margin-right: 66px;
@@ -319,6 +322,7 @@ modelo de caja - box model
 }
 .table-4{
 	border: solid 1px none;
+		box-shadow: 0 0 1em grey;
 	width: 250px;
 	float: left;
 	background-color: #fff;

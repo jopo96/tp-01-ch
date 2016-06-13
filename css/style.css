@@ -54,27 +54,41 @@ modelo de caja - box model
 	width: 1200px;
 	margin: auto;
 	padding: 20px 0;
- }
+}
 
 
 .logo{
 	float: left;
+	margin: 10px;
+}
+
+.logo figcaption{
+	display: none;
 }
 
  .main-nav{
  	float: right;
 
- }
+}
 
 /** Selector descendiente **/
  .main-nav li{
  	float: left;
- 	margin: 8px 0 0 15px;
+ 	margin: 15px 0 0 20px;
+ 	font-size: 13px;
+ 	font-weight: bold;
+}
+
+ .main-nav li a{
+ 	text-decoration: none;
+ 	text-transform: uppercase;
+ 	color: #808080;
+ 	letter-spacing: 2px;
  }
 
- .cleaner{
+.cleaner{
  	clear: both;
- }
+}
 
 #banner{
 	background: url(../images/indexbanner-bg3.jpg) center top no-repeat;
@@ -92,9 +106,11 @@ modelo de caja - box model
 	padding-top: 150px;
 	margin: 0;
 }
+
 .banner-text{
-	font-size: 20px;
-	color: #fff;
+	font-size: 18px;
+	color: #808080;
+	line-height: 25px;
 }
 
 .register{
@@ -102,10 +118,11 @@ modelo de caja - box model
 	position: relative;
 	top: 30px;
 }
+
 .register input{
 	background-color: #fff;
 	width: 1000px;
-	height: 60px;
+	height: 70px;
 	font-style: 16px;
 	font-family: inherit;
 }
@@ -114,11 +131,14 @@ modelo de caja - box model
 	float: right;
 	border: none;
 	width: 200px;
-	height: 60px;
-	background-color: #06b4f2;
+	height: 70px;
+	background-color: #00adf0;
 	color: #fff;
 	font-size: 16px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
 	font-family: inherit;
+	font-weight: bold;
 }
 
 .producto{
@@ -151,6 +171,7 @@ modelo de caja - box model
 	font-size: 16px;
 	font-family: inherit;
 	margin-bottom: 60px;
+	color: #808080;
 }
 
 .services-left{
@@ -165,7 +186,7 @@ modelo de caja - box model
 	float: none;
 	position: relative;
 	left: 60px;
-	top: -110px;
+	top: -105px;
 }
 
 .services-left h3{
@@ -192,7 +213,7 @@ modelo de caja - box model
 	float: none;
 	position: relative;
 	left: -60px;
-	top: -110px;
+	top: -105px;
 }
 .services-right h3{
 	text-transform: uppercase;
@@ -221,7 +242,9 @@ modelo de caja - box model
 	font-size: 16px;
 	font-family: inherit;
 	margin-bottom: 60px;
+	color: #808080;
 }
+
 .tables{
 	position: relative;
 	bottom: 180px;
@@ -231,8 +254,9 @@ modelo de caja - box model
 	text-transform: uppercase;
 	font-size: 15px;
 	text-align: center;
-	font-family: inherit;
+	font-weight: 500;
 }
+
 .tables h2{
 	text-align: center;
 	font-family: Arial;
@@ -243,7 +267,7 @@ modelo de caja - box model
 	text-align: center;
 	font-family: inherit;
 	font-size: 15px;
-	color: grey;
+	color: gray;
 	position: relative;
 	top: -45px;
 }
@@ -264,7 +288,7 @@ modelo de caja - box model
 
 
 .table-1{
-	border: solid 1px grey;
+	border: solid 1px none;
 	width: 250px;
 	float: left;
 	margin-right: 66px;
@@ -272,7 +296,7 @@ modelo de caja - box model
 }
 
 .table-2{
-	border: solid 1px grey;
+	border: solid 1px none;
 	width: 250px;
 	float: left;
 	margin-right: 66px;
@@ -280,21 +304,86 @@ modelo de caja - box model
 }
 
 .table-3{
-	border: solid 1px grey;
+	border: solid 1px none;
 	width: 250px;
 	float: left;
 	margin-right: 66px;
 	background-color: #fff;
 }
 .table-4{
-	border: solid 1px grey;
+	border: solid 1px none;
 	width: 250px;
 	float: left;
 	background-color: #fff;
 }
 
 .tables a{
-	font-size: 20px;
+	border: solid 1px #00adf0;
+	border-radius: 5px;
+	width: 700px;
+	height: 30px;
+	background-color: #00adf0;
+	color: #fff;
+	font-family: inherit;
+	font-size: 12px;
+	float:center;
 	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: bold;
 	text-decoration: none;
+	padding: 13px 50px;
+}
+
+.main-footer{
+	background-color: #233141;
+
+}
+
+
+
+.main-footer h3{
+	text-align: center;
+	font-size: 30px;
+	color: #fff;
+	font-weight: 400;
+	padding: 80px 0;
+}
+
+.main-footer span{
+	font-size: 30px;
+	font-family: sans-serif;
+	color: #00adf0;
+	font-weight: bold;
+}
+
+#copyright{
+	float: none;
+	width: 30%;
+	height: 100px;
+	padding-top: 70px;
+	color: grey;font-size: 15px;
+}
+
+.footer-nav{
+	float: right;
+	position: relative;
+	bottom: 43px;
+}
+
+.footer-nav li{
+	float: left;
+ 	margin: 0px 10px 0 0px;
+ 	font-size: 13px;
+}
+
+.footer-nav li a{
+ 	text-decoration: none;
+ 	color: grey;
+ 	font-size: 15px;
+ 	letter-spacing: 1px;
+ }
+
+.bf{
+	background-color: #151d26;
+	height: 150px;
 }

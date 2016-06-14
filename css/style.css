@@ -121,7 +121,6 @@ modelo de caja - box model
 	top: 40px;
 }
 
-
 .register input{
 	background-color: #fff;
 	width: 1000px;
@@ -132,7 +131,14 @@ modelo de caja - box model
 	letter-spacing: 1px;
 }
 
+.material-icons{
+	position: relative;
+	top: 5px;
+	right: 5px;
+}
+
 .register button{
+	border: solid 1px red;
 	float: right;
 	border: none;
 	width: 200px;

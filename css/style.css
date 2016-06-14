@@ -68,7 +68,6 @@ modelo de caja - box model
 
  .main-nav{
  	float: right;
-
 }
 
 /** Selector descendiente **/
@@ -85,6 +84,9 @@ modelo de caja - box model
  	color: #808080;
  	letter-spacing: 2px;
  }
+.main-nav li a:hover{
+	color: #000;
+}
 
 .cleaner{
  	clear: both;
@@ -116,22 +118,25 @@ modelo de caja - box model
 .register{
 	background-color: #fff;
 	position: relative;
-	top: 30px;
+	top: 40px;
 }
+
 
 .register input{
 	background-color: #fff;
 	width: 1000px;
-	height: 70px;
-	font-style: 16px;
+	height: 80px;
+	font-size: 15px;
 	font-family: inherit;
+	text-indent: 10px;
+	letter-spacing: 1px;
 }
 
 .register button{
 	float: right;
 	border: none;
 	width: 200px;
-	height: 70px;
+	height: 80px;
 	background-color: #00adf0;
 	color: #fff;
 	font-size: 16px;
@@ -173,48 +178,54 @@ modelo de caja - box model
 	margin-bottom: 60px;
 	color: #808080;
 }
-
 .services-left{
-	width: 330px;
-	margin-right: 70px;
+	width: 400px;
 	float: left;
+}
+
+.services-left li{
+	position: relative;
 	text-align: right;
-	margin-top: 50px;
+	padding-right: 70px;
+	margin-top: 80px;
+
 }
 
 .services-left img{
-	float: none;
-	position: relative;
-	left: 60px;
-	top: -105px;
+	position: absolute;
+	right: 0;
+	top: 0;
 }
 
 .services-left h3{
 	text-transform: uppercase;
 	font-size: 16px;
-	font-family: inherit; 
 }
 
 .services-center{
 	width: 400px;
 	float: left;
-	padding-left: 50px;
-	border: none;
+	text-align: center;
 }
 
 .services-right{
-	width: 330px;
-	margin-left: 70px;
-	float: right;
-	margin-top: 50px;
+	width: 400px;
+	float: left;
+}
+
+.services-right li{
+	position: relative;
+	text-align: left;
+	padding-left: 70px;
+	margin-top: 80px;
 }
 
 .services-right img{
-	float: none;
-	position: relative;
-	left: -60px;
-	top: -105px;
+	position: absolute;
+	left: 0;
+	top: 0;
 }
+
 .services-right h3{
 	text-transform: uppercase;
 	font-size: 16px;
@@ -223,61 +234,66 @@ modelo de caja - box model
 
 #prices-banner{
 	background: url(../images/pricing-bg.jpg) center top no-repeat;
-	background-position: cover;
-	height: 350px;
+	background-size: cover;
 	position: relative;
-	bottom: 100px;
+	margin-top: -100px;
 	z-index: -1;
 }
 
 .prices-title{
 	text-align: center;
 	font-size: 28px;
-	font-family: inherit;
 	padding-top: 130px;
 }
 
 .prices-text{
 	text-align: center;
 	font-size: 16px;
-	font-family: inherit;
-	margin-bottom: 60px;
+	padding-bottom: 180px;
 	color: #808080;
 }
 
-.tables{
-	position: relative;
-	bottom: 180px;
+.price-table{
+	float: left;
+	background: #fff;
+	width: 270px;
+	margin-right: 40px;
+	text-align: center;
+	box-shadow: 0 0 10px grey;
+	border-radius: 5px;
+	margin-top: -80px;
 }
 
-.tables h4{
+.price-table:last-of-type{
+	margin-right: 0;
+}
+
+.price-table h4{
 	text-transform: uppercase;
 	font-size: 15px;
 	text-align: center;
 	font-weight: 700;
+	margin-top: 40px;
 }
 
-.tables h2{
+.price-table h2{
 	text-align: center;
 	font-family: Arial;
 	font-size: 40px;
 }
 
-.tables sup{
+.price-table sup{
 	font-size: 22px;
-}
+	font-family: Arial; 
+}	
 
-
-
-.tables p{
+.price-table p{
 	text-align: center;
-	font-family: inherit;
 	font-size: 15px;
 	color: gray;
 	position: relative;
-	top: -45px;
+	top: -40px;
 }
-
 
 .divisor{
 	color: gray;
@@ -286,58 +302,38 @@ modelo de caja - box model
 	top: -20px;
 }
 
-.t td{
+.price-table td{
 	width: 250px;
 	height: 40px;
 	text-align: center;
 }
 
+.number-t1{
+	color: #00adf0;
+	font-weight: bold;
+}
 
-.table-1{
-	border: solid 1px none;
-		box-shadow: 0 0 1em grey;
-	width: 250px;
-	float: left;
-	margin-right: 66px;
-	background-color: #fff;
+.number-t2{
+	color: #ffb380;
+	font-weight: bold;
+}
+
+.number-t3{
+	color: orange;
+	font-weight: bold;
 
 }
 
-.table-2{
-	border: solid 1px none;
-		box-shadow: 0 0 1em grey;
-	width: 250px;
-	float: left;
-	margin-right: 66px;
-	background-color: #fff;
+.number-t4{
+	color: red;
+	font-weight: bold;
 }
 
-.table-3{
-	border: solid 1px none;
-		box-shadow: 0 0 1em grey;
-	width: 250px;
-	float: left;
-	margin-right: 66px;
-	background-color: #fff;
-}
-.table-4{
-	border: solid 1px none;
-		box-shadow: 0 0 1em grey;
-	width: 250px;
-	float: left;
-	background-color: #fff;
-}
-
-.tables a{
-	border: solid 1px #00adf0;
+.price-table a{
 	border-radius: 5px;
-	width: 700px;
-	height: 30px;
 	background-color: #00adf0;
 	color: #fff;
-	font-family: inherit;
 	font-size: 12px;
-	float:center;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	font-weight: bold;
@@ -347,17 +343,16 @@ modelo de caja - box model
 
 .main-footer{
 	background-color: #233141;
+	margin-top: 100px;
 
 }
 
-
-
 .main-footer h3{
 	text-align: center;
-	font-size: 30px;
+	font-size: 25px;
 	color: #fff;
 	font-weight: 400;
-	padding: 80px 0 50px 0;
+	padding: 70px 0 50px 0;
 }
 
 .main-footer span{
@@ -368,22 +363,24 @@ modelo de caja - box model
 }
 
 #copyright{
-	float: none;
+	float: left;
+	margin:0;
 	width: 30%;
-	height: 100px;
-	padding-top: 70px;
-	color: grey;font-size: 15px;
+	height: 80px;
+	color: grey;
+	font-size: 15px;
+	padding-top: 50px;
 }
 
 .footer-nav{
 	float: right;
-	position: relative;
-	bottom: 43px;
+	padding-top: 50px;
+	margin: 0;
 }
 
 .footer-nav li{
 	float: left;
- 	margin: 0px 10px 0 0px;
+ 	margin: 0px 20px 0 0px;
  	font-size: 13px;
 }
 
@@ -394,7 +391,11 @@ modelo de caja - box model
  	letter-spacing: 1px;
  }
 
-.bf{
+.footer-nav li a:hover{
+	color: white;
+}
+
+.sub-footer{
 	background-color: #151d26;
-	height: 130px;
+	height: 100px;
 }

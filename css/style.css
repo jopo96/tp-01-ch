@@ -9,12 +9,6 @@
 body{
 	font-family: 'Raleway', sans-serif;
 	margin: 0;
-	/*
-		margin-top: ;
-		margin-right: ;
-		margin-bottom: ;
-		margin-left: ;
-	*/
 }
 
 img {
@@ -39,22 +33,6 @@ ul, ol{
 figure{
 	margin: 0;
 }
-
-/*
-	tamaños
-		ancho - width:;
-		alto - height:;
-	modelo de caja - box model
-		- width
-		- height
-		- padding
-		- border
-			border-style [solid | dashed | dotted | double]
-			border-width
-			border-color
-			border: ;
-		- margin
-*/
 
 .main-header{
 	max-width: 1200px;
@@ -361,6 +339,7 @@ figure{
 }
 
 
+/******** Medium ********/
 @media (max-width:800px) {
 	.container, .main-header {
 		width: 95%;
@@ -401,7 +380,7 @@ figure{
 	}
 }
 
-
+/******** small ********/
 @media (max-width:700px) {
 	
 	.logo{
@@ -425,6 +404,7 @@ figure{
 	.banner-title{
 		display: none;
 	}
+
 	.banner-text{
 		display: none;
 	}
@@ -438,27 +418,15 @@ figure{
 		font-size: 13px;
 		width: 75%;
 	}
+
 	.register button{
-	width: 20%;
+		width: 20%;
 	}
-
-	/*.price-table h4 {
-		font-size: 13px;
-	}
-
-	.price-table h2 {
-		font-size: 30px;
-	}
-
-	.price-table table {
-		font-size: 9px;
-	}*/
 
 	.copyright{
 		float: none;
 		font-size: 13px;
 		text-align: center;
-
 	}
 
 	.footer-nav{
@@ -472,46 +440,159 @@ figure{
 	}
 
 	.main-footer h3{
-	font-size: 20px;
-}
-
-.main-footer h3 span{
-	font-size: 30px;
-}
-}
-
-
-
-
-@media (max-width:400px){
-
-.register input{
-	width: 75%;
-	font-size: 12px;
-	padding: 0;
-
+		font-size: 20px;
 	}
 
-.register button{
-	width: 20%;
+	.main-footer h3 span{
+		font-size: 30px;
+	}
 }
 
-.producto {
-	width: 100%;
-	margin-top: 50px;
-	}
 
-.price-table h4 {
+
+/******** xsmall ********/
+@media (max-width:420px){
+
+	.register input{
+		width: 75%;
 		font-size: 12px;
+		padding: 0;
+	}
+
+	.register button{
+		width: 20%;
+	}
+
+	.producto {
+		width: 100%;
+		margin-top: 50px;
+	}
+
+	.price-table h4 {
+			font-size: 12px;
 	}
 
 	.price-table table {
-		font-size: 9px;
+			font-size: 9px;
 	}
 
 	.price-table a{
-	padding: 5px;
-	letter-spacing: 1px;
-	font-size: 13px;
+		padding: 5px;
+		letter-spacing: 1px;
+		font-size: 13px;
+	}
 }
+
+
+
+
+
+/*****************************************/
+/**************** Contact ****************/
+/*****************************************/
+
+#contact-banner{
+	background: url(../images/indexbanner-bg2.jpg) center top no-repeat;
+	background-size: cover;
+}
+
+#contact-banner p{
+	padding-bottom: 80px;
+}
+
+.formulario{
+	width: 100%;
+	position: relative;
+	bottom: 50px;
+}
+
+#left{
+	width: 50%;
+	float: left;
+}
+
+#right{
+	width: 50%;
+	float: right;
+}
+
+#left input{
+	border:solid 1px grey;
+	width: 95%;
+	height: 50px;
+	font-size: 13px;
+	font-family: inherit;
+	border-radius: 5px;
+	padding-left: 10px;
+	margin: 0 2.5% 10px 2.5%;
+	float: left;
+}
+
+#right input{
+	border:solid 1px grey;
+	width: 95%;
+	height: 170px;
+	font-size: 13px;
+	font-family: inherit;
+	border-radius: 5px;
+	padding-left: 10px;
+	margin: 0 2.5%;
+	float: right;
+	padding-bottom: 120px;
+}
+
+
+#contenedor-button{
+text-align: center;
+}
+
+.button-form{
+	text-align: center;
+	border: none;
+	background-color: #06B4F2;
+	width: 20%;
+	height: 40px;
+	color: #fff;
+	border-radius: 5px;
+	font-family: inherit;
+	font-size: 10px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+
+
+
+/******** small ********/
+@media (max-width:700px)  {
+	#contact-banner{
+		background-image: none;
+	}
+	
+	.title-services{
+		margin: 0;
+	}
+
+	#left{
+		width: 100%;
+		float: none;
+	}
+
+	#right{
+		width: 100%;
+		float: none;
+	}
+
+	#contenedor-button{
+		margin-top: 10px;
+	}
+}
+
+/******** xsmall ********/
+@media (max-width:420px)  {
+	.button-form{
+		font-size: 8px;
+		letter-spacing: 1px;
+
+	}
 }

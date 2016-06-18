@@ -241,7 +241,6 @@ figure{
 .color-number-2{
 	color: orange;
 	font-weight: bold;
-
 }
 
 .color-number-3{
@@ -544,6 +543,7 @@ figure{
 
 #contenedor-button{
 text-align: center;
+margin-top: 20px;
 }
 
 .button-form{
@@ -583,9 +583,6 @@ text-align: center;
 		float: none;
 	}
 
-	#contenedor-button{
-		margin-top: 10px;
-	}
 }
 
 /******** xsmall ********/

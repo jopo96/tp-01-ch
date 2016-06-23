@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:100,400,700);
 /* selector universal */
-
+/*prueba atom */
 * {
     box-sizing: border-box;
     /* descuenta del width y height, lo sumado en padding y border */
@@ -19,7 +19,7 @@ ul,
 ol {
     list-style: none;
     /* elimina la viñeta */
-    
+
     margin: 0;
     padding: 0;
     /*
@@ -183,7 +183,7 @@ figure {
 		-5px -5px 10px red,
 		-10px -10px 10px green,
 		-15px -15px 10px orange*/
-    
+
     ;
     width: 22.5%;
     padding: 30px;
